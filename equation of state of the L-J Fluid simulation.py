@@ -154,8 +154,7 @@ def mc_simulation(T, N, L, rc2, dr, n_equilibrium, n_production):
     """
     # 初始化
     positions = initialize_fcc_lattice_np(N, L)
-    rho = N / L ** 3
-    V = L ** 3
+
 
     # 初始总势能
     U_total, _ = calculate_total_energy_virial(positions, L, rc2)
